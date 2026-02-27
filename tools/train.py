@@ -35,7 +35,9 @@ def parse_args():
     parser.add_argument('config', help='train config file path')
     parser.add_argument('--work-dir', help='the dir to save logs and models')
     parser.add_argument(
-        '--resume-from', help='the checkpoint file to resume from')
+        '--resume-from', help='the checkpoint file to resume from',
+        # default='/home/raven/code/TFdiss-main/work_dirs/bevformer_small/latest.pth'
+        )
     parser.add_argument(
         '--no-validate',
         action='store_true',
